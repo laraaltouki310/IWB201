@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl" >
+<head>
+    <meta charset="UTF-8">
+    <title>إضافة تطبيق جديد</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="myFunctions.js" defer></script>
+</head>
+<body class="home-page">
+<br><br>
+    <h1 style="text-align: center;">إضافة تطبيق جديد</h1>
+
+    <form id="appForm">
+        &nbsp &nbsp &nbsp <h2 for="appName" >اسم التطبيق:</h2><br><br>
+        &nbsp &nbsp &nbsp &nbsp <input type="text" id="appName" name="appName" required placeholder="مثال: MyApp"><br><br>
+
+        &nbsp &nbsp &nbsp <h2 for="company">الشركة المصنعة:</h2><br><br>
+        &nbsp &nbsp &nbsp &nbsp <input type="text" id="company" name="company" required placeholder="مثال: TechCo"><br><br>
+
+        &nbsp &nbsp &nbsp <h2 for="url">الموقع الإلكتروني:</h2><br><br>
+         &nbsp &nbsp &nbsp &nbsp <input type="url" id="url" name="url" required  placeholder="https://example.com"><br><br>
+
+        &nbsp &nbsp &nbsp <h2 for="usage">نوع الاستخدام:</h2><br><br><br>
+       &nbsp &nbsp &nbsp <select id="usage" name="usage" required><br>
+            <option value="">اختر نوع الاستخدام</option><br><br>
+            <option value="Robotics">Robotics</option>
+            <option value="Education">Education</option>
+            <option value="E-Commerce">E-Commerce</option>
+        </select>
+          <br><br>
+        &nbsp &nbsp &nbsp <h2 for="description">شرح مختصر عن التطبيق:</h2><br><br>
+        &nbsp &nbsp &nbsp &nbsp <textarea id="description" name="description" required placeholder="أدخل شرحاً مختصراً"></textarea><br><br>
+
+        &nbsp &nbsp &nbsp &nbsp <button type="submit">إرسال</button>
+        &nbsp &nbsp &nbsp &nbsp <button type="reset">إعادة</button>
+    </form>
+
+    <p id="errorMsg" style="color:red;"></p>
+	<footer>
+    <div class="footer-links">
+      <a href="home.html">الصفحة الرئيسية</a>
+      <a href="AboutUs.html">الذهاب الى صفحة من نحن</a>
+      <a href="apps.html">الذهاب الى صفحة التطبيقات</a>
+	  <a href="add_app.html">الذهاب الى صفحة اضافة التطبيقات</a>
+    </div>
+  </footer>
+</body>
+</html>
